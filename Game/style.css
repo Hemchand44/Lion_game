@@ -1,0 +1,117 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+body{
+     overflow: hidden;
+}
+
+.main{
+     /* background-color: red; */
+     background-image: url(Assests/GameBG.jpeg);
+     position: relative;
+     height: 100vh;
+     width: 100%;
+     /* opacity: 0.8; */
+}
+
+.boy {
+     background-image: url(Assests/Boy.png);
+     background-size: 70%;
+     background-repeat: no-repeat;
+     height: 168px;
+     width: 165px;
+     position: absolute;
+     bottom: 33px;
+     left: 210px;
+     
+}
+
+.lion{
+     background-image: url(Assests/lion.png);
+     background-size: 60%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 120px;
+    position: absolute;
+    bottom: 40px;
+    right: 105px;
+
+}
+
+.animateBoy{
+     animation: boy 0.8s linear ;
+
+}
+.lionAni{
+     animation: lionAni 5s linear infinite;
+}
+.gameover{
+     visibility: hidden;
+     position: relative;
+     top: 250px;
+     text-align: center;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 60px;
+     color: rgb(255, 0, 0);
+}
+
+#scorecount{
+     position: absolute;
+     top: 20px;
+     right: 50%;
+     background-color: rgba(0, 0, 0, 0.658);
+     border-radius: 20px;
+     width: 120px;
+     color:rgb(0, 255, 64);
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 20px;
+     padding: 10px;
+}
+
+
+
+
+@keyframes boy{
+     0%{
+         bottom: 33px;
+     }
+     50%{
+         bottom: 300px;
+     }
+     100%{
+         bottom: 33px;
+         /* left: 250px; */
+     }
+}
+
+@keyframes lionAni {
+     0%{
+          left: 100vw;
+     }
+     100%{
+          left: -10vw;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
